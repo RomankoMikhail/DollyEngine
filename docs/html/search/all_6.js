@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['layout',['Layout',['../struct_dolly_1_1_map_1_1_tiled_1_1_layout.html',1,'Dolly::Map::Tiled']]],
-  ['load',['load',['../struct_dolly_1_1_map_1_1_tiled_1_1_map.html#aa0abfd16a653562bd644696cd6645db4',1,'Dolly::Map::Tiled::Map']]],
-  ['loadfromfile',['loadFromFile',['../class_assets.html#a49e8d7a2a71566ce3ec1186666274a9a',1,'Assets']]]
+  ['ini',['Ini',['../class_dolly_1_1_parsers_1_1_ini.html',1,'Dolly::Parsers']]],
+  ['ini_2ehpp',['Ini.hpp',['../_ini_8hpp.html',1,'']]],
+  ['iniadapter',['IniAdapter',['../class_dolly_1_1_adapters_1_1_ini_adapter.html',1,'Dolly::Adapters']]],
+  ['iniadapter_2ehpp',['IniAdapter.hpp',['../_ini_adapter_8hpp.html',1,'']]]
 ];

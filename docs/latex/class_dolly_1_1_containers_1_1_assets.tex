@@ -1,0 +1,123 @@
+\hypertarget{class_dolly_1_1_containers_1_1_assets}{}\section{Dolly\+:\+:Containers\+:\+:Assets$<$ Identifier, Resource $>$ Class Template Reference}
+\label{class_dolly_1_1_containers_1_1_assets}\index{Dolly\+::\+Containers\+::\+Assets$<$ Identifier, Resource $>$@{Dolly\+::\+Containers\+::\+Assets$<$ Identifier, Resource $>$}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_dolly_1_1_containers_1_1_assets_ad75777f33ab43acb2aaab5254e903f75}{add} (Identifier id, std\+::unique\+\_\+ptr$<$ Resource $>$ res)
+\item 
+void \hyperlink{class_dolly_1_1_containers_1_1_assets_aff129b3dc003acb42d8b7ce27b0f0a2a}{load\+From\+File} (Identifier id, const std\+::string \&filepath)
+\item 
+void \hyperlink{class_dolly_1_1_containers_1_1_assets_a83335c3229a5b3aebea546309718445c}{remove} (Identifier id)
+\item 
+Resource \& \hyperlink{class_dolly_1_1_containers_1_1_assets_abe6916123b573c9a4440e15213168ad8}{get} (Identifier id)
+\item 
+const Resource \& \hyperlink{class_dolly_1_1_containers_1_1_assets_a07cfae702a571e0dd17c44e531f7823d}{get} (Identifier id) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_dolly_1_1_containers_1_1_assets_ad75777f33ab43acb2aaab5254e903f75}\label{class_dolly_1_1_containers_1_1_assets_ad75777f33ab43acb2aaab5254e903f75}} 
+\index{Dolly\+::\+Containers\+::\+Assets@{Dolly\+::\+Containers\+::\+Assets}!add@{add}}
+\index{add@{add}!Dolly\+::\+Containers\+::\+Assets@{Dolly\+::\+Containers\+::\+Assets}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily template$<$typename Identifier , typename Resource $>$ \\
+void \hyperlink{class_dolly_1_1_containers_1_1_assets}{Dolly\+::\+Containers\+::\+Assets}$<$ Identifier, Resource $>$\+::add (\begin{DoxyParamCaption}\item[{Identifier}]{id,  }\item[{std\+::unique\+\_\+ptr$<$ Resource $>$}]{res }\end{DoxyParamCaption})}
+
+Manually adds an asset to internal container and trying to assign identifier 
+\begin{DoxyParams}{Parameters}
+{\em id} & unique identifier \\
+\hline
+{\em res} & resource unique pointer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false if id or res is not unique (duplicate of asset or id collision) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_dolly_1_1_containers_1_1_assets_abe6916123b573c9a4440e15213168ad8}\label{class_dolly_1_1_containers_1_1_assets_abe6916123b573c9a4440e15213168ad8}} 
+\index{Dolly\+::\+Containers\+::\+Assets@{Dolly\+::\+Containers\+::\+Assets}!get@{get}}
+\index{get@{get}!Dolly\+::\+Containers\+::\+Assets@{Dolly\+::\+Containers\+::\+Assets}}
+\subsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Identifier , typename Resource $>$ \\
+Resource \& \hyperlink{class_dolly_1_1_containers_1_1_assets}{Dolly\+::\+Containers\+::\+Assets}$<$ Identifier, Resource $>$\+::get (\begin{DoxyParamCaption}\item[{Identifier}]{id }\end{DoxyParamCaption})}
+
+Gets reference to asset by specified id 
+\begin{DoxyParams}{Parameters}
+{\em id} & unique identifier\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+requested asset 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::runtime\+\_\+error} & if id not found \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_dolly_1_1_containers_1_1_assets_a07cfae702a571e0dd17c44e531f7823d}\label{class_dolly_1_1_containers_1_1_assets_a07cfae702a571e0dd17c44e531f7823d}} 
+\index{Dolly\+::\+Containers\+::\+Assets@{Dolly\+::\+Containers\+::\+Assets}!get@{get}}
+\index{get@{get}!Dolly\+::\+Containers\+::\+Assets@{Dolly\+::\+Containers\+::\+Assets}}
+\subsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Identifier , typename Resource $>$ \\
+const Resource \& \hyperlink{class_dolly_1_1_containers_1_1_assets}{Dolly\+::\+Containers\+::\+Assets}$<$ Identifier, Resource $>$\+::get (\begin{DoxyParamCaption}\item[{Identifier}]{id }\end{DoxyParamCaption}) const}
+
+Gets constant reference to asset by specified id 
+\begin{DoxyParams}{Parameters}
+{\em id} & unique identifier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+requested constant asset
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::runtime\+\_\+error} & if id not found \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_dolly_1_1_containers_1_1_assets_aff129b3dc003acb42d8b7ce27b0f0a2a}\label{class_dolly_1_1_containers_1_1_assets_aff129b3dc003acb42d8b7ce27b0f0a2a}} 
+\index{Dolly\+::\+Containers\+::\+Assets@{Dolly\+::\+Containers\+::\+Assets}!load\+From\+File@{load\+From\+File}}
+\index{load\+From\+File@{load\+From\+File}!Dolly\+::\+Containers\+::\+Assets@{Dolly\+::\+Containers\+::\+Assets}}
+\subsubsection{\texorpdfstring{load\+From\+File()}{loadFromFile()}}
+{\footnotesize\ttfamily template$<$typename Identifier , typename Resource $>$ \\
+void \hyperlink{class_dolly_1_1_containers_1_1_assets}{Dolly\+::\+Containers\+::\+Assets}$<$ Identifier, Resource $>$\+::load\+From\+File (\begin{DoxyParamCaption}\item[{Identifier}]{id,  }\item[{const std\+::string \&}]{filepath }\end{DoxyParamCaption})}
+
+Loads assets from file (by calling appropriate function) 
+\begin{DoxyParams}{Parameters}
+{\em id} & unique identifier \\
+\hline
+{\em filepath} & file path to resource\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000002}{Bug}]load\+From\+File not working with sf\+::\+Music, use other manager instead\end{DoxyRefDesc}
+
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::runtime\+\_\+error} & if loading or inserting failed \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_dolly_1_1_containers_1_1_assets_a83335c3229a5b3aebea546309718445c}\label{class_dolly_1_1_containers_1_1_assets_a83335c3229a5b3aebea546309718445c}} 
+\index{Dolly\+::\+Containers\+::\+Assets@{Dolly\+::\+Containers\+::\+Assets}!remove@{remove}}
+\index{remove@{remove}!Dolly\+::\+Containers\+::\+Assets@{Dolly\+::\+Containers\+::\+Assets}}
+\subsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily template$<$typename Identifier , typename Resource $>$ \\
+void \hyperlink{class_dolly_1_1_containers_1_1_assets}{Dolly\+::\+Containers\+::\+Assets}$<$ Identifier, Resource $>$\+::remove (\begin{DoxyParamCaption}\item[{Identifier}]{id }\end{DoxyParamCaption})}
+
+Removes specified id from container 
+\begin{DoxyParams}{Parameters}
+{\em id} & unique identifier\\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+This method D\+O\+ES D\+E\+A\+L\+L\+O\+C\+A\+TE memory occupied by asset! 
+\end{DoxyWarning}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em runtime\+\_\+error} & if id not found \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Containers/\hyperlink{_assets_8hpp}{Assets.\+hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,110 @@
+\hypertarget{class_dolly_1_1_parsers_1_1_ini}{}\section{Dolly\+:\+:Parsers\+:\+:Ini Class Reference}
+\label{class_dolly_1_1_parsers_1_1_ini}\index{Dolly\+::\+Parsers\+::\+Ini@{Dolly\+::\+Parsers\+::\+Ini}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_dolly_1_1_parsers_1_1_ini_ad8315b663c209a05664b2b0d4df4fcb7}{load} (const std\+::string \&filename)
+\item 
+bool \hyperlink{class_dolly_1_1_parsers_1_1_ini_a706c4dcbe74e09cb12c224d32c53afc1}{save} (const std\+::string \&filename) const
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{class_dolly_1_1_parsers_1_1_ini_a0e3dcec1db12ef0f031c217ca5080d9e}{get\+Section\+List} () const
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{class_dolly_1_1_parsers_1_1_ini_a0baf943bec811d90b3842ecf43358128}{get\+Keys\+List} (const std\+::string \&section) const
+\item 
+void \hyperlink{class_dolly_1_1_parsers_1_1_ini_a86d11b952d38230e35b2b1a3c032aa4f}{set} (const std\+::string \&section, const std\+::string \&key, const std\+::string \&value)
+\item 
+std\+::string \hyperlink{class_dolly_1_1_parsers_1_1_ini_a447b016bca7b36f435f5c7a6f4a444e4}{get} (const std\+::string \&section, const std\+::string \&key, const std\+::string \&def=\char`\"{}\char`\"{}) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_dolly_1_1_parsers_1_1_ini_a447b016bca7b36f435f5c7a6f4a444e4}\label{class_dolly_1_1_parsers_1_1_ini_a447b016bca7b36f435f5c7a6f4a444e4}} 
+\index{Dolly\+::\+Parsers\+::\+Ini@{Dolly\+::\+Parsers\+::\+Ini}!get@{get}}
+\index{get@{get}!Dolly\+::\+Parsers\+::\+Ini@{Dolly\+::\+Parsers\+::\+Ini}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily std\+::string Dolly\+::\+Parsers\+::\+Ini\+::get (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{section,  }\item[{const std\+::string \&}]{key,  }\item[{const std\+::string \&}]{def = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption}) const}
+
+Gets the string value key from specified section 
+\begin{DoxyParams}{Parameters}
+{\em section} & name of the section \\
+\hline
+{\em key} & name of the key \\
+\hline
+{\em def} & default value, if key/section dosn\textquotesingle{}t exist \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_dolly_1_1_parsers_1_1_ini_a0baf943bec811d90b3842ecf43358128}\label{class_dolly_1_1_parsers_1_1_ini_a0baf943bec811d90b3842ecf43358128}} 
+\index{Dolly\+::\+Parsers\+::\+Ini@{Dolly\+::\+Parsers\+::\+Ini}!get\+Keys\+List@{get\+Keys\+List}}
+\index{get\+Keys\+List@{get\+Keys\+List}!Dolly\+::\+Parsers\+::\+Ini@{Dolly\+::\+Parsers\+::\+Ini}}
+\subsubsection{\texorpdfstring{get\+Keys\+List()}{getKeysList()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Dolly\+::\+Parsers\+::\+Ini\+::get\+Keys\+List (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{section }\end{DoxyParamCaption}) const}
+
+Return the vector of strings that contains all keys of specific section 
+\begin{DoxyParams}{Parameters}
+{\em section} & name of the section \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector of all available keys of the section as strings 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_dolly_1_1_parsers_1_1_ini_a0e3dcec1db12ef0f031c217ca5080d9e}\label{class_dolly_1_1_parsers_1_1_ini_a0e3dcec1db12ef0f031c217ca5080d9e}} 
+\index{Dolly\+::\+Parsers\+::\+Ini@{Dolly\+::\+Parsers\+::\+Ini}!get\+Section\+List@{get\+Section\+List}}
+\index{get\+Section\+List@{get\+Section\+List}!Dolly\+::\+Parsers\+::\+Ini@{Dolly\+::\+Parsers\+::\+Ini}}
+\subsubsection{\texorpdfstring{get\+Section\+List()}{getSectionList()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Dolly\+::\+Parsers\+::\+Ini\+::get\+Section\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Return the vector of strings that contains all loaded sections \begin{DoxyReturn}{Returns}
+vector of all available sections as strings 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_dolly_1_1_parsers_1_1_ini_ad8315b663c209a05664b2b0d4df4fcb7}\label{class_dolly_1_1_parsers_1_1_ini_ad8315b663c209a05664b2b0d4df4fcb7}} 
+\index{Dolly\+::\+Parsers\+::\+Ini@{Dolly\+::\+Parsers\+::\+Ini}!load@{load}}
+\index{load@{load}!Dolly\+::\+Parsers\+::\+Ini@{Dolly\+::\+Parsers\+::\+Ini}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily bool Dolly\+::\+Parsers\+::\+Ini\+::load (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+Parses ini file content into memory. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & ini file name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if load has been successful, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_dolly_1_1_parsers_1_1_ini_a706c4dcbe74e09cb12c224d32c53afc1}\label{class_dolly_1_1_parsers_1_1_ini_a706c4dcbe74e09cb12c224d32c53afc1}} 
+\index{Dolly\+::\+Parsers\+::\+Ini@{Dolly\+::\+Parsers\+::\+Ini}!save@{save}}
+\index{save@{save}!Dolly\+::\+Parsers\+::\+Ini@{Dolly\+::\+Parsers\+::\+Ini}}
+\subsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily bool Dolly\+::\+Parsers\+::\+Ini\+::save (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption}) const}
+
+Saves information, stored in the class as ini file 
+\begin{DoxyParams}{Parameters}
+{\em filename} & ini file name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if file has been saved, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_dolly_1_1_parsers_1_1_ini_a86d11b952d38230e35b2b1a3c032aa4f}\label{class_dolly_1_1_parsers_1_1_ini_a86d11b952d38230e35b2b1a3c032aa4f}} 
+\index{Dolly\+::\+Parsers\+::\+Ini@{Dolly\+::\+Parsers\+::\+Ini}!set@{set}}
+\index{set@{set}!Dolly\+::\+Parsers\+::\+Ini@{Dolly\+::\+Parsers\+::\+Ini}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void Dolly\+::\+Parsers\+::\+Ini\+::set (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{section,  }\item[{const std\+::string \&}]{key,  }\item[{const std\+::string \&}]{value }\end{DoxyParamCaption})}
+
+Sets the string value key in specified section 
+\begin{DoxyParams}{Parameters}
+{\em section} & name of the section \\
+\hline
+{\em key} & name of the key \\
+\hline
+{\em value} & string value \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Parsers/\hyperlink{_ini_8hpp}{Ini.\+hpp}\item 
+src/\+Parsers/Ini.\+cpp\end{DoxyCompactItemize}

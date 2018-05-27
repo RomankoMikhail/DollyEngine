@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hanoimodel',['HanoiModel',['../class_hanoi_model.html',1,'']]]
+  ['config',['Config',['../class_dolly_1_1_containers_1_1_config.html',1,'Dolly::Containers']]]
 ];

@@ -6,7 +6,7 @@
 
 #include <SFML/Graphics.hpp>
 #include "HanoiModel.h"
-#include "Map/Tiled.h"
+//#include "Map/Tiled.h"
 #include <iostream>
 #include <fstream>
 
@@ -41,7 +41,6 @@ int main()
 	myMap.set(1, 0, 1);
 	myMap.set(0, 1, 1);
 	myMap.set(1, 1, 13);
-	myMap.rebuild();
 	myMap.setPosition(10, 10);
 	myMap.setScale(2, 2);
 
