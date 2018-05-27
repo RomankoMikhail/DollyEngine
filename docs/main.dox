@@ -1,0 +1,10 @@
+/**
+@mainpage
+
+Welcome to DollyEngine developers documentation!
+
+Please checkout following section first:
+ - @ref code_style
+ - @ref available_tutorials
+
+*/
