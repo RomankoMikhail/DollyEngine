@@ -1,0 +1,91 @@
+.TH "HanoiModel" 3 "Mon May 21 2018" "DollyEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+HanoiModel
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits Drawable\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBadd\fP (sf::Sprite &sprite)"
+.br
+.RI "Adds sprite to 'Hanoi sprite tower'\&. "
+.ti -1c
+.RI "void \fBclear\fP ()"
+.br
+.RI "Destroies hanoi sprite tower\&. "
+.ti -1c
+.RI "virtual void \fBdraw\fP (sf::RenderTarget &target, sf::RenderStates states) const"
+.br
+.RI "Render whole sprite tower to specified target\&. "
+.ti -1c
+.RI "virtual void \fBdrawShadow\fP (sf::RenderTarget &target, sf::Vector2f scale) const"
+.br
+.RI "Render shadow of the tower to specified target\&. "
+.ti -1c
+.RI "void \fBsetPosition\fP (sf::Vector2f pos)"
+.br
+.ti -1c
+.RI "void \fBsetPosition\fP (float x, float y)"
+.br
+.ti -1c
+.RI "void \fBsetRotation\fP (float rotation)"
+.br
+.ti -1c
+.RI "void \fBsetScale\fP (sf::Vector2f scale)"
+.br
+.ti -1c
+.RI "void \fBsetScale\fP (float x, float y)"
+.br
+.ti -1c
+.RI "void \fBsetShadowAngle\fP (float angle)"
+.br
+.ti -1c
+.RI "void \fBsetHeightStep\fP (float step)"
+.br
+.ti -1c
+.RI "void \fBsetShadowStep\fP (float step)"
+.br
+.ti -1c
+.RI "sf::Vector2f \fBgetPosition\fP ()"
+.br
+.ti -1c
+.RI "sf::Vector2f \fBgetScale\fP ()"
+.br
+.ti -1c
+.RI "float \fBgetShadowAngle\fP ()"
+.br
+.ti -1c
+.RI "float \fBgetShadowStep\fP ()"
+.br
+.ti -1c
+.RI "float \fBgetHeightStep\fP ()"
+.br
+.ti -1c
+.RI "float \fBgetRotation\fP ()"
+.br
+.ti -1c
+.RI "void \fBmove\fP (sf::Vector2f pos)"
+.br
+.ti -1c
+.RI "void \fBmove\fP (float x, float y)"
+.br
+.ti -1c
+.RI "void \fBscale\fP (sf::Vector2f scale)"
+.br
+.ti -1c
+.RI "void \fBscale\fP (float x, float y)"
+.br
+.ti -1c
+.RI "void \fBrotate\fP (float rotation)"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for DollyEngine from the source code\&.

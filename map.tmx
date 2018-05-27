@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="32" height="32" tileheight="32" tileheight="32" nextobjectid="14">
+ <tileset firstgid="1" source="безымянный.tsx"/>
+ <tileset firstgid="3073" source="безымянный2.tsx"/>
+ <layer name="Слой тайлов 1" width="32" height="32">
+  <data encoding="base64" compression="zlib">
+   eJzt0MsJACAMBFFRS0vjdia5Cf4QovEwD3J1FkMAAMyU1J9X9+WGXf/mlpP2jQ2e/dHbkv362taLzf3WtzT7f3nUX+0AAMBCBRVlSiE=
+  </data>
+ </layer>
+ <layer name="Слой тайлов 2" width="32" height="32">
+  <data encoding="base64" compression="zlib">
+   eJzt0LEKACAIRVGhtaH//9qmICILIbXhHnBpuY9EAAAQaTW3PS6zPfeLskV7f92P8ks7Y4Ol77Ft1193eP7RqX/bFd33kNm27ACAlzqauAjf
+  </data>
+ </layer>
+ <objectgroup name="Слой объектов 1">
+  <object id="7" x="384" y="416" width="32" height="32"/>
+  <object id="8" x="32" y="416" width="160" height="320"/>
+  <object id="9" x="96" y="608" width="480" height="160"/>
+  <object id="10" gid="3074" x="320" y="416" width="32" height="32">
+   <properties>
+    <property name="bool" type="bool" value="false"/>
+    <property name="color" type="color" value="#ffcc0000"/>
+    <property name="file" type="file" value="../Расширенный Курс.mini.odp"/>
+    <property name="float" type="float" value="0"/>
+    <property name="int" type="int" value="0"/>
+    <property name="string" value="123"/>
+   </properties>
+  </object>
+  <object id="11" gid="1285" x="480" y="448" width="32" height="32"/>
+  <object id="12" x="192" y="480" width="138.391" height="19">
+   <text wrap="1">Простой пример</text>
+  </object>
+  <object id="13" x="448" y="576" width="138.391" height="19">
+   <text wrap="1">Простой пример</text>
+  </object>
+ </objectgroup>
+</map>

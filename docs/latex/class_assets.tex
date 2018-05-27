@@ -1,0 +1,75 @@
+\hypertarget{class_assets}{}\section{Assets$<$ Resource, Identifier $>$ Class Template Reference}
+\label{class_assets}\index{Assets$<$ Resource, Identifier $>$@{Assets$<$ Resource, Identifier $>$}}
+
+
+{\ttfamily \#include $<$Assets.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_assets_a4f68c4062a79168c95daf5189a0fc66d}{add} (Identifier id, std\+::unique\+\_\+ptr$<$ Resource $>$ res)
+\item 
+bool \hyperlink{class_assets_a49e8d7a2a71566ce3ec1186666274a9a}{load\+From\+File} (Identifier id, const sf\+::\+String \&filepath)
+\item 
+\mbox{\Hypertarget{class_assets_a89254b23f0e1477aae4bbb99d76e85cb}\label{class_assets_a89254b23f0e1477aae4bbb99d76e85cb}} 
+void {\bfseries remove} (Identifier id)
+\item 
+\mbox{\Hypertarget{class_assets_a02f50a66b90b8c154d1613be25fdfe43}\label{class_assets_a02f50a66b90b8c154d1613be25fdfe43}} 
+Resource {\bfseries get} (Identifier id)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Resource, typename Identifier$>$\newline
+class Assets$<$ Resource, Identifier $>$}
+
+\hyperlink{class_assets}{Assets} class for storing and accessing contents in generalized manner \begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000001}{Bug}]load\+From\+File not working with sf\+::\+Music, use other manager instead \end{DoxyRefDesc}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_assets_a4f68c4062a79168c95daf5189a0fc66d}\label{class_assets_a4f68c4062a79168c95daf5189a0fc66d}} 
+\index{Assets@{Assets}!add@{add}}
+\index{add@{add}!Assets@{Assets}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily template$<$typename Resource , typename Identifier $>$ \\
+bool \hyperlink{class_assets}{Assets}$<$ Resource, Identifier $>$\+::add (\begin{DoxyParamCaption}\item[{Identifier}]{id,  }\item[{std\+::unique\+\_\+ptr$<$ Resource $>$}]{res }\end{DoxyParamCaption})}
+
+Manually adds an asset to internal container and trying to assign identifier 
+\begin{DoxyParams}{Parameters}
+{\em id} & unique identifier \\
+\hline
+{\em res} & resource unique pointer\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::runtime\+\_\+error} & if id or pointer is not unique \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_assets_a49e8d7a2a71566ce3ec1186666274a9a}\label{class_assets_a49e8d7a2a71566ce3ec1186666274a9a}} 
+\index{Assets@{Assets}!load\+From\+File@{load\+From\+File}}
+\index{load\+From\+File@{load\+From\+File}!Assets@{Assets}}
+\subsubsection{\texorpdfstring{load\+From\+File()}{loadFromFile()}}
+{\footnotesize\ttfamily template$<$typename Resource , typename Identifier $>$ \\
+bool \hyperlink{class_assets}{Assets}$<$ Resource, Identifier $>$\+::load\+From\+File (\begin{DoxyParamCaption}\item[{Identifier}]{id,  }\item[{const sf\+::\+String \&}]{filepath }\end{DoxyParamCaption})}
+
+Loads assets from file (by calling appropriate function) 
+\begin{DoxyParams}{Parameters}
+{\em id} & unique identifier \\
+\hline
+{\em filepath} & file path to resource\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000002}{Bug}]load\+From\+File not working with sf\+::\+Music, use other manager instead\end{DoxyRefDesc}
+
+
+\begin{DoxyReturn}{Returns}
+true if loading is successful and false otherwise 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Managers/\hyperlink{_assets_8hpp}{Assets.\+hpp}\end{DoxyCompactItemize}

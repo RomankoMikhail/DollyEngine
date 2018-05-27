@@ -1,0 +1,62 @@
+.TH "Dolly::Map::Tiled::Property" 3 "Mon May 21 2018" "DollyEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Dolly::Map::Tiled::Property
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum { \fBboolean\fP, \fBcolor\fP, \fBfile\fP, \fBfloating\fP, \fBinteger\fP, \fBstring\fP }"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::string \fBname\fP"
+.br
+.ti -1c
+.RI "enum Dolly::Map::Tiled::Property:: { \&.\&.\&. }  \fBtype\fP"
+.br
+.ti -1c
+.RI "union {"
+.br
+.ti -1c
+.RI "   bool \fBbvalue\fP"
+.br
+.ti -1c
+.RI "   struct {"
+.br
+.ti -1c
+.RI "      char \fBred\fP"
+.br
+.ti -1c
+.RI "      char \fBgreen\fP"
+.br
+.ti -1c
+.RI "      char \fBblue\fP"
+.br
+.ti -1c
+.RI "   } \fBcvalue\fP"
+.br
+.ti -1c
+.RI "   float \fBfvalue\fP"
+.br
+.ti -1c
+.RI "   int \fBivalue\fP"
+.br
+.ti -1c
+.RI "}; "
+.br
+.ti -1c
+.RI "std::string \fBsvalue\fP"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for DollyEngine from the source code\&.
